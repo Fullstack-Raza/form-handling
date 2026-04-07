@@ -22,20 +22,32 @@ main {
 section:nth-child(1) {
   width: 50%;
   height: 100%;
-  background-color: #ccc;
+  background-color: #ff22e1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section form {
-  width: 500px;
+  width: 400px;
   height: 250px;
   background-color: aqua;
   padding: 20px;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-section form button {
+section form input {
+  height: 30px;
+  width: 250px;
+  padding: 10px;
+}
+
+section form button,
+#Start,
+#Stop {
   border: none;
   background-color: rgb(25, 0, 255);
   padding: 10px 20px;
@@ -51,13 +63,17 @@ section:nth-child(2) {
   width: 50%;
   height: 100%;
   display: flex;
-  background-color: #bb1818;
+  background-color: rgb(8, 55, 210);
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
-
 }
 
+#bg {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
 section:nth-child(2) div {
   width: 200px;
   display: flex;
